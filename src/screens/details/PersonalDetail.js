@@ -2,7 +2,7 @@ import React , {useState, useContext, useEffect} from 'react'
 
 import { InputBox } from '../../components/InputBox'
 
-import { PersonalConsumer } from '../../context/Personal'
+import { PersonalConsumer } from '../../context/PersonalContext'
 
 const placeHolders = [
     'First Name *',
@@ -21,7 +21,6 @@ export const PersonalDetail = () =>{
     const getCredentialValue = (str) => {
         switch(str){
             case 'First Name *' : 
-                console.log(credentials.fName)
                 return credentials.fName
             case 'Last Name *' : 
                 return credentials.lName

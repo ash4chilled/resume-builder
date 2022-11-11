@@ -2,7 +2,8 @@ import React , {useState} from 'react'
 
 import { PersonalDetail } from './details/PersonalDetail'
 import { Education } from './details/Education';
-import { PersonalContextProvider } from '../context/Personal';
+import { PersonalContextProvider } from '../context/PersonalContext';
+import { EducationContextProvider } from '../context/EducationContext';
 
 
 export const Home = () => {
@@ -20,6 +21,7 @@ export const Home = () => {
     ]
     return(
         <PersonalContextProvider>
+        <EducationContextProvider>
         <main className = "">
             <div className='subpixel-antialiased py-5 text-2xl drop-shadow-md flex justify-center w-screen bg-charcoal text-white text-lg'>
                 Resume Builder
@@ -38,6 +40,8 @@ export const Home = () => {
                 </div>
             </div>       
         </main>
+        </EducationContextProvider>
         </PersonalContextProvider>
+
     )
 }

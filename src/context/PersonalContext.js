@@ -10,7 +10,6 @@ const PersonalContextProvider = ({children}) => {
     const [credentials, setCredentials] = useState(initialState)
 
     const addToCredentials = (obj) => {
-        console.log("addToCredentials")
         switch(obj.type){
             case 'First Name *' : 
                 setCredentials(prev=> ({...prev, fName : obj.value }))
