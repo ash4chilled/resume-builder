@@ -11,7 +11,6 @@ export const EducationBox = ({saveToAcademics, currentEducation}) =>{
     }
 
     const [saved, setSaved] = useState(false)
-    const [bgSaveBtn, setBgSaveBtn] = useState('charcoal')
     const [education, setEducation] = useState(initialState)
     const [comment, setComment] = useState(null)
 
@@ -44,7 +43,7 @@ export const EducationBox = ({saveToAcademics, currentEducation}) =>{
             education.program === "" || 
             education.from === "" ||
             education.to === "" ){
-                setComment("One or more fields from Empty")
+                setComment("One or more fields are Empty")
             }
         else{
             saveToAcademics(education)
@@ -89,11 +88,11 @@ export const EducationBox = ({saveToAcademics, currentEducation}) =>{
                     </div>
                 </div>
         
-        <div className='flex justify-end'>
-            <div className={`text-${saved ? 'green-500' : 'red-500'} px-5`} >
+        <div className='flex justify-end items-center'>
+            <div className={`text-${saved ? 'green-500' : 'red-500'} text-sm px-5`} >
                 {comment}</div>
             <button 
-            className={`bg-${bgSaveBtn} text-white px-2 rounded-sm`}
+            className={`bg-charcoal text-white px-2 rounded-sm`}
             onClick={()=> validateInputs()} >
              save
             </button>
