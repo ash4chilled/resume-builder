@@ -8,7 +8,8 @@ module.exports = {
         'blueGray' : '#7393B3',
         'charcoal' : '#36454F',
         'darkGray' : '#ABB2B9',
-        'green' : '#008080'
+        'green' : '#008080',
+        'burgandy' : '#800020',
       }
     },
   },

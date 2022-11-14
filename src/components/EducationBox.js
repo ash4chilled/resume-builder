@@ -79,6 +79,7 @@ export const EducationBox = ({saveToAcademics, currentEducation}) =>{
                                 <label className='text-darkGray'>From</label> 
                                 <div className='flex'>
                                     <Selection 
+                                    setColor = '#008080'
                                     placeHolder= "Month" 
                                     optionsList = {months}
                                     setDate = {addEducation}
@@ -86,6 +87,7 @@ export const EducationBox = ({saveToAcademics, currentEducation}) =>{
                                     value = {currentEducation.from.month} /> 
 
                                     <Selection 
+                                    setColor = '#008080'
                                     placeHolder = "Year" 
                                     optionsList = {years}
                                     setDate = {addEducation}
@@ -97,7 +99,8 @@ export const EducationBox = ({saveToAcademics, currentEducation}) =>{
                         <div className='flex items-center justify-between py-2 pl-2'> 
                                 <label className='text-darkGray'>To</label> 
                                 <div className='flex'>
-                                    <Selection 
+                                    <Selection
+                                    setColor = '#008080' 
                                     placeHolder= "Month" 
                                     optionsList = {months}
                                     setDate = {addEducation}
@@ -105,6 +108,7 @@ export const EducationBox = ({saveToAcademics, currentEducation}) =>{
                                     value ={currentEducation.to.month}  /> 
 
                                     <Selection 
+                                    setColor = '#008080'
                                     placeHolder = "Year" 
                                     optionsList = {years}
                                     setDate = {addEducation}

@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 
 
-export const Selection = ({optionsList, placeHolder, setDate, type, value}) => {
+export const Selection = ({optionsList, placeHolder, setDate, type, value, setColor}) => {
 
     const [selectedValue, setSelectedValue] = useState(value)
 
@@ -15,7 +15,8 @@ export const Selection = ({optionsList, placeHolder, setDate, type, value}) => {
 
     return(
         <select 
-        className = 'p-2 ml-3 bg-green rounded-sm text-white outline-transparent'
+        style = {{backgroundColor : setColor}}
+        className = 'p-2 my-3 ml-3 rounded-sm text-white outline-transparent'
         onChange = {handleChange}
         value = {selectedValue}  >
             <option value="" selected disabled hidden>{placeHolder}</option>

@@ -8,6 +8,14 @@
     gitHub : ''
 }
 
+const initialStateExperience = {
+    position : '',
+    company : '',
+    from : {month : '', year : ''},
+    to : {month: '', year : ''},
+    skillset : [],
+}
+
 
 const months = [
     {value : 1, label : 'January'},
@@ -81,4 +89,4 @@ const years = [
 
 ]
 
-export {initialState, months, years}
+export {initialState, months, years, initialStateExperience}

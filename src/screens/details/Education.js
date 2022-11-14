@@ -9,22 +9,21 @@ export const Education = () =>{
    
     const { addEducationBox, educationBoxes} = useContext(EducationConsumer)
 
-    const [addIcon, setAddIcon] = useState("white")
+    const [addIcon, setAddIcon] = useState("#ABB2B9")
 
     return(
     <div className='relative'>
         <Subtitle 
         heading = 'Education'
         setColor = '#008080' /> 
-
-        <div className='top-3 right-2 absolute'>
-            <AddButton
-            color ={addIcon}
-            className='text-4xl cursor-pointer'
-            onClick={addEducationBox}
-            onMouseOver = {()=> setAddIcon('#36454F') }
-            onMouseLeave = {()=> setAddIcon("white")} />
-        </div>
+        
+        <AddButton
+        color ={addIcon}
+        className='text-4xl cursor-pointer top-3 right-2 absolute'
+        onClick={addEducationBox}
+        onMouseOver = {()=> setAddIcon('white') }
+        onMouseLeave = {()=> setAddIcon("#ABB2B9")} />
+        
        
         { educationBoxes.map(eduBox=> <div key = {eduBox.index}>{eduBox.box}</div>)}
 
