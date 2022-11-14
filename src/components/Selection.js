@@ -15,7 +15,7 @@ export const Selection = ({optionsList, placeHolder, setDate, type, value}) => {
 
     return(
         <select 
-        className = 'p-2 ml-3 bg-charcoal rounded-sm text-white outline-transparent'
+        className = 'p-2 ml-3 bg-green rounded-sm text-white outline-transparent'
         onChange = {handleChange}
         value = {selectedValue}  >
             <option value="" selected disabled hidden>{placeHolder}</option>

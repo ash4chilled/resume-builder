@@ -1,6 +1,7 @@
 import React , {useState, useContext, useEffect} from 'react'
 
 import { InputBox } from '../../components/InputBox'
+import { Subtitle } from '../../components/Subtitle'
 
 import { PersonalConsumer } from '../../context/PersonalContext'
 
@@ -67,7 +68,9 @@ export const PersonalDetail = () =>{
 
     return(
     <>
-        <div className='py-2 text-xl flex justify-center text-white drop-shadow-sm rounded-sm bg-darkGray'>Personal Details</div>
+       <Subtitle 
+       heading = "Personal Detail"
+       setColor='#0F52BA' />
 
         <div className = "flex flex-wrap py-5 px-5 justify-center">
             {displayInputBoxes}

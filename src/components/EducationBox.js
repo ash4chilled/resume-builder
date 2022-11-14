@@ -120,7 +120,7 @@ export const EducationBox = ({saveToAcademics, currentEducation}) =>{
             <div className={`text-${saved ? 'green-500' : 'red-500'} text-sm px-5`} >
                 {comment}</div>
             <button 
-            className={`bg-charcoal text-white px-2 rounded-sm`}
+            className={`bg-green text-white px-2 rounded-sm`}
             onClick={()=> validateInputs()} >
              save
             </button>
