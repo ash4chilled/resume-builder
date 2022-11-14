@@ -21,7 +21,7 @@ export const InputBox = ({
     return(
         <>
         <input
-        className={`border rounded-sm px-2 py-1 m-2 ${boxWidth}`} 
+        className={`border rounded-sm px-2 py-1 m-2 ${boxWidth} text-darkGray`} 
         placeholder={placeHolder}
         onChange = {handleChange}
         value = {text}

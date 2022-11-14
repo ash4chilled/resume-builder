@@ -27,7 +27,7 @@ export const Education = () =>{
          
          { educationBoxes.map(eduBox=> <div key = {eduBox.index}>{eduBox.box}</div>)}
 
-         {academics.map(obj=> <div key = {obj.index}>{obj.education.school}</div> )}
+         {/* {academics.map(obj=> <div key = {obj.index}>{obj.education.school}</div> )} */}
        
        
     </div>

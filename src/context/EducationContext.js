@@ -8,8 +8,8 @@ const EducationContextProvider = ({children}) =>{
     const initialState = {
         school : '',
         program : '',
-        from : '',
-        to : ''
+        from : {month : '' , year : ''},
+        to : { month : '' , year : ''},
     }
    
     const [academics, setAcademics] = useState([])

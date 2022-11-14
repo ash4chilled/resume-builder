@@ -22,8 +22,3 @@ export const Button = ({title, getComponent, index, componentsLength}) => {
         </button>
     )
 }
-
-
-{/* <button 
-className={`bg-${backButtonBg} rounded-sm text-white px-5`}
-onClick= {()=> getComponent(-1)}> Back</button>  */}
