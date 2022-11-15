@@ -60,7 +60,7 @@ export const EducationBox = ({saveToAcademics, currentEducation}) =>{
 
 
     return(
-    <div className='border-b-2 pb-2'>
+    <div className='border-b pb-2'>
          <div className='my-2 flex flex-col justify-center items-center'>
                     <InputBox 
                     placeHolder='School' 
@@ -75,7 +75,7 @@ export const EducationBox = ({saveToAcademics, currentEducation}) =>{
                     textValue ={currentEducation.program} />
                     
                     <div className='flex flex-col w-9/12 '>
-                        <div className='flex items-center justify-between py-2 pl-2 border-b-2'> 
+                        <div className='flex items-center justify-between py-2 pl-2 border-b'> 
                                 <label className='text-darkGray'>From</label> 
                                 <div className='flex'>
                                     <Selection 
